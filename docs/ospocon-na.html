@@ -18,6 +18,20 @@
 		.reveal h2,
 		.reveal h3 {
 			font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, FreeSerif, serif !important;
+			--r-main-font-size: 40px !important;
+			--r-block-margin: 20px !important;
+			--r-heading-margin: 0 0 20px 0 !important;
+			--r-heading-font: Palatino Linotype, Book Antiqua, Palatino, FreeSerif, serif !important;
+			--r-heading-line-height: 1.2 !important;
+			--r-heading-letter-spacing: normal !important;
+			--r-heading-text-transform: none !important;
+			--r-heading-text-shadow: none !important;
+			--r-heading-font-weight: normal !important;
+			--r-heading1-text-shadow: none !important;
+			--r-heading1-size: 3.77em !important;
+			--r-heading2-size: 2.11em !important;
+			--r-heading3-size: 1.55em !important;
+			--r-heading4-size: 1em !important;
 		}
 
 		.reveal code:not(.hljs) {
@@ -37,7 +51,6 @@
 			position: absolute;
 			top: -150px;
 			right: 10px;
-			width: 40%;
 		}
 
 		.top_left_slide {
@@ -52,9 +65,11 @@
 			text-shadow: 1px 1px 20px black !important;
 		}
 
-		.lightcyan_shadow {
-			color: lightcyan !important;
-			text-shadow: 1px 1px 20px black !important;
+		.white_smoke_background {
+			color: whitesmoke !important;
+			background-color: rgba(28, 27, 27, 0.7);
+			padding: 0 30px;
+			width: fit-content;
 		}
 
 		.portrait {
@@ -100,7 +115,7 @@
 	<div class="reveal">
 		<div class="slides">
 			<section>
-				<img src="images/aiven-logo_RGB-wht-txt.svg" alt="Aiven Logo" class="top_left">
+				<img src="images/aiven-logo_RGB.png" alt="Aiven Logo" class="top_left">
 				<h2><b>Extrospective OSPOs</b></h2>
 			</section>
 			<section>
@@ -115,17 +130,17 @@
 				<h2 class="white_smoke_shadow"><b>Extrospective OSPOs</b></h2>
 			</section>
 			<section>
-				<blockquote><b>Extrospective:</b> Examining what is outside yourself</blockquote>
+				<blockquote><b>Extrospective:</b> Examining what is outside yourself.</blockquote>
 			</section>
 			<section>
-				<h3>Inbound & Outbound</h3>
+				<h3>Inbound & outbound</h3>
 				<div>
 					<img class="fragment" src="images/inbound-outbound.svg"
 						alt="Inbound Outbound venn diagram with intersection between both" height="60%" width="60%">
 				</div>
 			</section>
 			<section>
-				<h3>Outbound Characteristics</h3>
+				<h3>Outbound characteristics</h3>
 				<ul>
 					<li class="fragment">Policies around creating OSS</li>
 					<li class="fragment">Promote adoption of own OSS</li>
@@ -158,7 +173,7 @@
 				</p>
 			</section>
 			<section data-background="images/blackboard.jpg">
-				<h2 class="white_smoke_shadow"><b>Lessons Learned</b></h2>
+				<h2 class="white_smoke_shadow"><b>Lessons learned</b></h2>
 			</section>
 			<section>
 				<h3>Meet Aiven's OSPO</h3>
@@ -173,7 +188,7 @@
 						their respective owners.</em></small>
 			</section>
 			<section>
-				<h3>Some Aiven's OSPO: Facts</h3>
+				<h3>Some Aiven's OSPO facts</h3>
 				<ul>
 					<li class="fragment">Around 10 people</li>
 					<li class="fragment">Organized in chapters</li>
@@ -183,7 +198,7 @@
 				</ul>
 			</section>
 			<section>
-				<h3>Our Principles</h3>
+				<h3>Our principles</h3>
 				<ul>
 					<li class="fragment">Community first</li>
 					<li class="fragment">Be recognized</li>
@@ -192,7 +207,7 @@
 				</ul>
 			</section>
 			<section>
-				<h3>Risks</h3>
+				<h3>Oddities</h3>
 				<ul>
 					<li class="fragment">3rd party owned IP</li>
 					<li class="fragment">Little to no control over backlog</li>
@@ -245,11 +260,15 @@
 			</section>
 			<section>
 				<h3>Growing talent</h3>
-				<p>Programs to promote OSS contributions internally</p>
+				<p>Programs to promote OSS contributions internally.</p>
 				<p class="fragment"><b>Plankton Program</b> &mdash; OSS Contribution = €</p>
 			</section>
 			<section data-background="images/tactics.jpg">
-				<h3 class="lightcyan_shadow">Management style</h3>
+				<div>
+					<center>
+						<h3 class="white_smoke_background">Management style</h3>
+					</center>
+				</div>
 			</section>
 			<section>
 				<h3>1. New toolset</h3>
@@ -266,7 +285,11 @@
 				<p class="fragment">Leadership is not based on technical expertise.</p>
 			</section>
 			<section data-background="images/metrics.jpg">
-				<h3 class="white_smoke_shadow">Measuring success</h3>
+				<div>
+					<center>
+						<h3 class="white_smoke_background">Measuring success</h3>
+					</center>
+				</div>
 			</section>
 			<section>
 				<h3>What to measure?</h3>
@@ -282,14 +305,14 @@
 				<ul>
 					<li class="fragment">Number of issues worked on</li>
 					<li class="fragment">Number of patches reviewed</li>
-					<li class="fragment">Community engagement (blog posts, mailing list, talks)</li>
+					<li class="fragment">Community engagement (blog posts, mailing list, talks, bug reports&hellip;)</li>
 				</ul>
 			</section>
 			<section>
 				<h3>And now, hard work!</h3>
 			</section>
 			<section data-background="images/sea.jpg">
-				<h2 class="lightcyan_shadow"><b>Why does it matter?</b></h2>
+				<h2 class="white_smoke_background"><b>Why does it matter?</b></h2>
 			</section>
 			<section>
 				<h3>More than $$$</h3>
@@ -298,7 +321,7 @@
 			</section>
 			<section>
 				<h3>Scalable solution</h3>
-				<p>More extrospective OSPOs = More OSS developer mass</p>
+				<p>More extrospective OSPOs = More OSS developer mass.</p>
 			</section>
 			<section>
 				<h3>More secure</h3>
