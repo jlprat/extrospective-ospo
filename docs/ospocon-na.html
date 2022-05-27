@@ -108,6 +108,27 @@
 		.reveal blockquote {
 			background: rgba(255, 255, 255, 0.5);
 		}
+
+		.print-pdf footer {
+			position: absolute;
+			bottom: -406px;
+			left: 50px;
+		}
+
+		.print-pdf .top_left {
+			position: relative;
+			top: 0;
+			left: 244px;
+			max-width: 340px;
+		}
+
+		.print-only {
+			display: none;
+		}
+
+		.print-pdf .print-only {
+			display: block;
+		}
 	</style>
 </head>
 
@@ -117,12 +138,15 @@
 			<section>
 				<img src="images/aiven-logo_RGB.png" alt="Aiven Logo" class="top_left">
 				<h2><b>Extrospective OSPOs</b></h2>
+				<footer class="print-only">
+					Josep Prat &mdash; @jlprat &mdash; #extrospectiveOSPO
+				</footer>
 			</section>
 			<section>
 				<h3>Outline</h3>
 				<ul>
 					<li>Extrospective???</li>
-					<li>Lessons Learned</li>
+					<li>Lessons learned</li>
 					<li>Why it matters?</li>
 				</ul>
 			</section>
@@ -161,7 +185,7 @@
 					open source?</h2>
 			</section>
 			<section>
-				<h3>Working towards ensuring:</h3>
+				<h3>Working towards ensuring</h3>
 				<ul>
 					<li class="fragment">Critical infrastructure actively maintained</li>
 					<li class="fragment">Projects not depending on a single company, organization or individual</li>
@@ -170,7 +194,7 @@
 				</ul>
 			</section>
 			<section>
-				<h3>Mission:</h3>
+				<h3>Mission</h3>
 				<p>Ensure the sustainability and secure the future of the Open Source Software infrastructure used.
 				</p>
 			</section>
@@ -307,23 +331,27 @@
 				<ul>
 					<li class="fragment">Number of issues worked on</li>
 					<li class="fragment">Number of patches reviewed</li>
-					<li class="fragment">Community engagement (blog posts, mailing list, talks, bug reports&hellip;)</li>
+					<li class="fragment">Community engagement (blog posts,<br />mailing list, talks, bug reports&hellip;)</li>
 				</ul>
 			</section>
 			<section>
 				<h3>And now, hard work!</h3>
 			</section>
 			<section data-background="images/sea.jpg">
-				<h2 class="white_smoke_background"><b>Why does it matter?</b></h2>
+				<div>
+					<center>
+						<h2 class="white_smoke_background"><b>Why does it matter?</b></h2>
+					</center>
+				</div>
 			</section>
 			<section>
 				<h3>More than $$$</h3>
-				<p>Monetary donations solve massive problems in OSS projects.</p>
-				<p class="fragment">Maintenance burden is reduced only with more people.</p>
+				<p>Monetary donations solve massive problems<br />in OSS projects.</p>
+				<p class="fragment">Maintenance burden is reduced only<br />with more people.</p>
 			</section>
 			<section>
 				<h3>Scalable solution</h3>
-				<p>More extrospective OSPOs = More OSS developer mass.</p>
+				<p>More extrospective OSPOs = More OSS developer mass</p>
 			</section>
 			<section>
 				<h3>More secure</h3>
@@ -335,7 +363,11 @@
 				<p class="fragment">Every company who <b><em>could</em></b> afford it should have one extrospective OSPO.</p>
 			</section>
 			<section data-background="images/together.jpg">
-				<h3 class="white_smoke_shadow">Let's build shared OSS projects, together!</h3>
+				<div>
+					<center>
+						<h3 class="white_smoke_background">Let's build shared OSS projects, together!</h3>
+					</center>
+				</div>
 			</section>
 			<section>
 				<h2>Further information</h2>
@@ -346,12 +378,17 @@
 							rel="noopener noreferrer">Contributing.today: Do you even OSPO?</a></li>
 					<li><a href="https://todogroup.org/blog/convince-manager-start-ospo/" target="_blank"
 							rel="noopener noreferrer">How to convince your manager to start an OSPO</a></li>
-					<li><a href="https://aiven.io" target="_blank" rel="noopener noreferrer">Aiven io</a></li>
+					<li><a href="https://aiven.io" target="_blank" rel="noopener noreferrer">Aiven.io</a></li>
 				</ul>
 			</section>
 			<section>
 				<h1>Thanks!</h1>
 				<img src="images/slidesQR.svg" alt="https://jlprat.github.io/extrospective-ospo/ospocon-na.html">
+				<p class="print-only">
+					<small>
+						Josep Prat &mdash; @jlprat &mdash; #extrospectiveOSPO
+					</small>
+				</p>
 			</section>
 		</div>
 		<footer>
