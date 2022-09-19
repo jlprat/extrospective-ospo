@@ -1,0 +1,362 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>The world of 3rd party open source projects</title>
+
+	<link rel="stylesheet" href="reveal.js/dist/reset.css">
+	<link rel="stylesheet" href="reveal.js/dist/reveal.css">
+	<link rel="stylesheet" href="reveal.js/dist/theme/sky.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="reveal.js/plugin/highlight/monokai.css">
+	<style type="text/css">
+		.reveal,
+		.reveal h2,
+		.reveal h3 {
+			font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, FreeSerif, serif !important;
+			--r-main-font-size: 40px !important;
+			--r-block-margin: 20px !important;
+			--r-heading-margin: 0 0 20px 0 !important;
+			--r-heading-font: Palatino Linotype, Book Antiqua, Palatino, FreeSerif, serif !important;
+			--r-heading-line-height: 1.2 !important;
+			--r-heading-letter-spacing: normal !important;
+			--r-heading-text-transform: none !important;
+			--r-heading-text-shadow: none !important;
+			--r-heading-font-weight: normal !important;
+			--r-heading1-text-shadow: none !important;
+			--r-heading1-size: 3.77em !important;
+			--r-heading2-size: 2.11em !important;
+			--r-heading3-size: 1.55em !important;
+			--r-heading4-size: 1em !important;
+		}
+
+		.reveal code:not(.hljs) {
+			color: #452ee2;
+			font-weight: bold;
+		}
+
+		.reveal small.disclaimer {
+			font-size: 18px;
+		}
+
+		.reveal pre {
+			width: 100%;
+		}
+
+		.top_left {
+			position: absolute;
+			top: -150px;
+			right: 10px;
+			max-height: 3em !important;
+		}
+
+		.top_left_slide {
+			position: absolute;
+			top: -150px;
+			right: 10px;
+			width: 40%;
+		}
+
+		.white_smoke_shadow {
+			color: whitesmoke !important;
+			text-shadow: 1px 1px 20px black !important;
+		}
+
+		.white_smoke_background {
+			color: whitesmoke !important;
+			background-color: rgba(28, 27, 27, 0.7);
+			padding: 0 30px;
+			width: fit-content;
+		}
+
+		.portrait {
+			height: 200px;
+			height: 200px;
+			position: absolute;
+			top: -50px;
+			right: 20px;
+		}
+
+		.reveal h3 {
+			font-weight: bold;
+		}
+
+		.hljs-comment,
+		.hljs-quote,
+		.hljs-deletion,
+		.hljs-meta {
+			color: #31d701;
+		}
+
+		footer {
+			position: absolute;
+			bottom: 40px;
+			left: 50px;
+		}
+
+		.green {
+			color: green;
+		}
+
+		.red {
+			color: red;
+		}
+
+		.reveal blockquote {
+			background: rgba(255, 255, 255, 0.5);
+		}
+
+		.print-pdf footer {
+			position: absolute;
+			bottom: -406px;
+			left: 50px;
+		}
+
+		.print-pdf .top_left {
+			position: relative;
+			top: 0;
+			left: 244px;
+			max-width: 340px;
+		}
+
+		.print-only {
+			display: none;
+		}
+
+		.print-pdf .print-only {
+			display: block;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<img src="images/aiven-logo_RGB.png" alt="Aiven Logo" class="top_left">
+				<h2><b>The world of 3rd party open source projects</b></h2>
+				<footer class="print-only">
+					Josep Prat &mdash; @jlprat &mdash; #extrospectiveOSPO
+				</footer>
+			</section>
+			<section>
+				<h3>Outline</h3>
+				<ul>
+					<li>Open Source in Enterprises</li>
+					<li>OSPO: Lessons learned</li>
+					<li>Why does it matter?</li>
+				</ul>
+			</section>
+			<section data-background="images/rocket.jpg" data-background-repeat="round">
+				<h2 class="white_smoke_shadow"><b>What is Open Source?</b></h2>
+			</section>
+			<section>
+				<blockquote><b>Open Source Software:</b> Open-source software is released under a license in which the copyright
+					holder grants users the rights to <b>use</b>, <b>study</b>, <b>change</b>, and <b>distribute</b> the
+					software and its source code to anyone and for any purpose.</blockquote>
+			</section>
+			<section>
+				<h3>Why should you care?</h3>
+				<p>Well...
+					<span class="fragment">You use Open Source everyday at work. Your software depends on it,
+						<b>heavily!</b></span>
+				</p>
+			</section>
+			<section>
+				<h3>Given this&hellip;</h3>
+				<img src="images/server.svg" alt="Web server talking to 2 different services" height="30%" width="30%">
+				<p class="fragment">Would you consider it a risk if one of these modules was maintained by your developers in
+					their free time?
+				</p>
+			</section>
+			<section>
+				<h2>Why are we accepting it<br />
+					when it comes to<br />
+					open source?</h2>
+			</section>
+			<section>
+				<h3>What is an Open Source Program Office?</h3>
+				<p>Group of people in a company to guarantee and promote the usage of Open Source.</p>
+				<ul>
+					<li class="fragment">Policies around consuming and creating OSS</li>
+					<li class="fragment">Promote adoption of own OSS</li>
+					<li class="fragment">Governance</li>
+					<li class="fragment">Code production</li>
+				</ul>
+			</section>
+			<section data-background="images/blackboard.jpg">
+				<h2 class="white_smoke_shadow"><b>Lessons learned</b></h2>
+			</section>
+			<section>
+				<h3>Mission</h3>
+				<p>Ensure the sustainability and secure the future of the Open Source Software infrastructure Aiven relies on.
+				</p>
+			</section>
+			<section>
+				<h3>Working towards ensuring</h3>
+				<ul>
+					<li class="fragment">Critical infrastructure actively maintained</li>
+					<li class="fragment">Projects not depending on a single company, organization or individual</li>
+					<li class="fragment">Diversity of opinions</li>
+					<li class="fragment">Relieve workload of current maintainers</li>
+				</ul>
+			</section>
+			<section>
+				<h3>Meet Aiven's OSPO</h3>
+				<div>
+					<img src="images/kafka_highres.png" alt="Apache Kafka Logo" width="180px" class="fragment">
+					<img src="images/flink2_500_color_black.png" alt="Apache Flink Logo" width="180px" class="fragment">
+					<img src="images/PostgreSQL_logo.3colors.540x557.png" alt="PostgreSQL Slonik" width="130px" class="fragment">
+					<img src="images/opensearch_logo_default.png" alt="OpenSearch Logo" width="180px" class="fragment">
+					<img src="images/Apache Cassandra.svg" alt="Apache Cassandra Logo" width="180px" class="fragment">
+
+				</div>
+				<p class="fragment">And more to come&hellip;</p>
+				<small class="disclaimer fragment"><em>Apache Kafka, Apache Flink, Apache Cassandra, PostgreSQL and OpenSearch
+						are trademarks of
+						their respective owners.</em></small>
+			</section>
+			<section>
+				<h3>Some Aiven's OSPO facts</h3>
+				<ul>
+					<li class="fragment">Around 15 people</li>
+					<li class="fragment">A chapter for each technology</li>
+					<li class="fragment">Distributed</li>
+					<li class="fragment">Growing phase - Hiring!</li>
+					<li class="fragment">1.5 years old!</li>
+				</ul>
+			</section>
+			<section>
+				<h3>If we would have known this&hellip;</h3>
+				<h3 class="fragment">when we started!</h3>
+			</section>
+			<section data-background="images/devtraits.jpg">
+				<h3 class="white_smoke_shadow">Developer type</h3>
+			</section>
+			<section>
+				<h3>We need developers who:</h3>
+				<ul>
+					<li class="fragment">Don't <b>focus</b> on quick turnarounds</li>
+					<li class="fragment">Are <b>self driven</b> - you are your own Product Owner</li>
+					<li class="fragment">Can understand what the <b>community needs</b></li>
+					<li class="fragment">Are <b>resilient</b>, you need lots of patience</li>
+				</ul>
+			</section>
+			<section data-background="images/hiring.jpg">
+				<h3 class="white_smoke_shadow">Getting talent</h3>
+			</section>
+			<section>
+				<h3>About hiring:</h3>
+				<ul>
+					<li class="fragment"><b>Varied</b>, combining senior and junior community members</li>
+					<li class="fragment"><b>Effective</b>, the pool is really small</li>
+					<li class="fragment"><b>Grow</b> your own talent with internal programs</li>
+					<li class="fragment"><b>Remote</b>, hello multiple time zones!</li>
+				</ul>
+			</section>
+			<section data-background="images/tactics.jpg">
+				<div>
+					<center>
+						<h3 class="white_smoke_background">Management style</h3>
+					</center>
+				</div>
+			</section>
+			<section>
+				<h3>Managers should be:</h3>
+				<ul>
+					<li class="fragment"><b>Resourceful</b>, areas of impact are limited</li>
+					<li class="fragment"><b>Coach</b>, enabler from the side line</li>
+				</ul>
+			</section>
+			<section data-background="images/metrics.jpg">
+				<div>
+					<center>
+						<h3 class="white_smoke_background">Measuring success</h3>
+					</center>
+				</div>
+			</section>
+			<section>
+				<h3>A proposal</h3>
+				<ul>
+					<li class="fragment">Number of issues worked on</li>
+					<li class="fragment">Number of patches reviewed</li>
+					<li class="fragment">Community engagement (blog posts,<br />mailing list, talks, bug reports&hellip;)</li>
+				</ul>
+			</section>
+			<section data-background="images/sea.jpg">
+				<div>
+					<center>
+						<h2 class="white_smoke_background"><b>Why does it matter?</b></h2>
+					</center>
+				</div>
+			</section>
+			<section>
+				<h3>More than $$$</h3>
+				<p>Monetary donations solve massive problems<br />in OSS projects.</p>
+				<p class="fragment">Maintenance burden is reduced only<br />with more people.</p>
+			</section>
+			<section>
+				<h3>Scalable solution</h3>
+				<p>More extrospective OSPOs = More OSS developer mass</p>
+			</section>
+			<section>
+				<h3>More secure</h3>
+				<p>It's not only about preventing incidents, it's about being able to react fast.</p>
+			</section>
+			<section data-background="images/together.jpg">
+				<div>
+					<center>
+						<h3 class="white_smoke_background">Let's build shared OSS projects, together!</h3>
+					</center>
+				</div>
+			</section>
+			<section>
+				<h2>Further information</h2>
+				<ul>
+					<li><a href="https://aiven.io/blog/open-source-program-office-at-aiven-a-year-later" target="_blank"
+							rel="noopener noreferrer">Aiven's OSPO, a year later</a></li>
+					<li><a href="https://www.youtube.com/watch?v=m8bebkH7q28" target="_blank"
+							rel="noopener noreferrer">Contributing.today: Do you even OSPO?</a></li>
+					<li><a href="https://todogroup.org/blog/convince-manager-start-ospo/" target="_blank"
+							rel="noopener noreferrer">How to convince your manager to start an OSPO</a></li>
+					<li><a href="https://aiven.io" target="_blank" rel="noopener noreferrer">Aiven.io</a></li>
+				</ul>
+			</section>
+			<section>
+				<h1>Thanks!</h1>
+				<img src="images/taste-for-tech.png" width="400px" height="400px"
+					alt="https://jlprat.github.io/extrospective-ospo/taste-for-tech.html">
+				<p class="print-only">
+					<small>
+						Josep Prat &mdash; @jlprat &mdash; #extrospectiveOSPO
+					</small>
+				</p>
+			</section>
+		</div>
+		<footer>
+			Josep Prat &mdash; @jlprat &mdash; #extrospectiveOSPO &mdash; Taste For Tech
+		</footer>
+	</div>
+
+	<script src="reveal.js/dist/reveal.js"></script>
+	<script src="reveal.js/plugin/notes/notes.js"></script>
+	<script src="reveal.js/plugin/markdown/markdown.js"></script>
+	<script src="reveal.js/plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+			slideNumber: true,
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
