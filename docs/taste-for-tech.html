@@ -92,10 +92,19 @@
 			color: #31d701;
 		}
 
-		footer {
-			position: absolute;
-			bottom: 40px;
-			left: 50px;
+		@media screen and (min-width: 40px) {
+			footer {
+				position: absolute;
+				bottom: 40px;
+				left: 50px;
+				font-size: 0.5em;
+			}
+		}
+
+		@media screen and (min-width: 600px) {
+			footer {
+				font-size: 1em;
+			}
 		}
 
 		.green {
